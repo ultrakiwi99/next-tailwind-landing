@@ -13,13 +13,16 @@ export default function Home() {
             <a href="#listings" className="text-gray-800 hover:text-blue-500">
               Listings
             </a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">
+            <a href="#about" className="text-gray-800 hover:text-blue-500">
               About
             </a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">
+            <a
+              href="#testimonials"
+              className="text-gray-800 hover:text-blue-500"
+            >
               Testimonials
             </a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">
+            <a href="#contacts" className="text-gray-800 hover:text-blue-500">
               Contact
             </a>
           </div>
@@ -113,6 +116,125 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="about" className="py-16 scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2">
+              <img
+                src="https://placehold.co/400x400"
+                alt="Real Estate Agent"
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+            <div className="md:w-1/2">
+              <h2 className="text-3xl font-bold mb-6">About [Your Name]</h2>
+              <p className="text-gray-600 mb-6">
+                With over [X] years of experience in [Location] real estate...
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-center">
+                  <svg
+                    className="w-6 h-6 text-blue-600 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                  </svg>
+                  [X] Properties Sold
+                </li>
+                <li className="flex items-center">
+                  <svg
+                    className="w-6 h-6 text-blue-600 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                  </svg>
+                  [X] Apartments Rented
+                </li>
+                <li className="flex items-center">
+                  <svg
+                    className="w-6 h-6 text-blue-600 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                  </svg>
+                  [X] Other stuff done
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" className="py-16 bg-gray-50 scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            What My Clients Say
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Testimonial card 1 */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://placehold.co/48x48"
+                  alt="Client 1"
+                  className="rounded-full w-16 h-16 mr-4"
+                />
+                <div>
+                  <h4 className="font-semibold">John Doe</h4>
+                  <p className="text-gray-500">Homeowner</p>
+                </div>
+              </div>
+              <p className="text-gray-600">
+                "Working with [Your Name] was an incredible experience..."
+              </p>
+            </div>
+            {/* Testimonial card 2 */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://placehold.co/48x48"
+                  alt="Client 1"
+                  className="rounded-full w-16 h-16 mr-4"
+                />
+                <div>
+                  <h4 className="font-semibold">Michael Brown</h4>
+                  <p className="text-gray-500">Investor</p>
+                </div>
+              </div>
+              <p className="text-gray-600">
+                "Working with [Your Name] was an incredible experience..."
+              </p>
+            </div>
+            {/* Testimonial card 3 */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://placehold.co/48x48"
+                  alt="Client 1"
+                  className="rounded-full w-16 h-16 mr-4"
+                />
+                <div>
+                  <h4 className="font-semibold">Jane Smith</h4>
+                  <p className="text-gray-500">Seller</p>
+                </div>
+              </div>
+              <p className="text-gray-600">
+                "I highly recommend [Your Name] for any real estate needs..."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" className="py-16 scroll-mt-20">
+        <div className="container mx-auto px-4 max-w-lg">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Let's Connect
+          </h2>
+          <form className="space-y-6"></form>
         </div>
       </section>
     </>
